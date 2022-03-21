@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.quera">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Quera">
+        <activity
+            android:name=".View.LoginActivity"
+            android:exported="true"
+            android:label="Quera">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.quera.View.RegisterActivity"
+            android:parentActivityName=".View.LoginActivity"/>
+        <activity android:name="com.example.quera.View.ProfessorPanelActivity2"
+            android:parentActivityName=".View.LoginActivity"/>
+        <activity android:name="com.example.quera.View.StudentPanelActivity"
+            android:parentActivityName=".View.LoginActivity"/>
+        <activity android:name="com.example.quera.View.ProfessorClassPanelActivity"
+            android:parentActivityName=".View.ProfessorPanelActivity2"/>
+        <activity android:name="com.example.quera.View.CreateClassActivity"
+            android:parentActivityName=".View.ProfessorPanelActivity2"/>
+
+        <activity android:name="com.example.quera.View.CreateTaskActivity"
+            android:parentActivityName=".View.LoginActivity"/>
+
+        <activity android:name="com.example.quera.View.EditTaskActivity"
+            android:parentActivityName=".View.ProfessorClassPanelActivity"/>
+
+        <activity android:name="com.example.quera.View.StudentClassPanelActivity"
+            android:parentActivityName=".View.StudentPanelActivity"/>
+
+        <activity android:name="com.example.quera.View.AnswerActivity"
+            android:parentActivityName=".View.StudentClassPanelActivity"/>
+
+        <activity android:name="com.example.quera.View.AddClassActivity"
+            android:parentActivityName=".View.LoginActivity"/>
+
+
+    </application>
+
+</manifest>
